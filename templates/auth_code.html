@@ -1,0 +1,22 @@
+{%extends "base.html"%}
+{% block body %}
+<div id="Afternav">
+    <div class="Api_execute">
+        <br><br>
+        Press this button to get your latest posts
+        <center>
+            <button id="btn_post_details" type="button" class="btn btn-dark">Press me</button>
+        </center>
+
+        <div class="DataResult">
+            <p id="result">
+                <img class="profile_img"><br>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src={{url_for('static', filename='js/auth_code.js')}}></script>
+{% endblock %}

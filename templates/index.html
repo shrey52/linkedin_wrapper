@@ -1,0 +1,22 @@
+{%extends "base.html"%}
+{% block body %}
+<div id="Afternav">
+    <div class="Api_execute">
+        <form id="Client_details" action="index.html" method="post">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Client ID</label>
+                <input type="password" id="client_id" class="form-control" placeholder="Api Key" name="client_id">
+                <label for="exampleInputPassword1">Client Secret</label>
+                <input type="password" id="access_token" class="form-control" placeholder="Secret Key" name="client_secret">
+            </div>
+            <center><button id="btn_get_access" type="submit" class="btn btn-dark">Authorize</button></center>
+        </form>
+
+        
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src={{url_for('static', filename='js/index.js')}}></script>
+{% endblock %}

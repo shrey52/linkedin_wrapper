@@ -1,0 +1,17 @@
+.Api_execute {
+    position: fixed;
+    top: 25%;
+    left: 35%;
+}
+
+
+.DataResult {
+    position: fixed;
+    padding-top: 20px;
+    left: 45%
+}
+
+.profile_img {
+    width: 250px;
+    padding-left: 40px;
+}
